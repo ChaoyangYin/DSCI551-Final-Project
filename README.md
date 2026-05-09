@@ -1,6 +1,10 @@
 # DSCI551-Final-Project: DuckDB Sales Analytics Project
 
 ## Sunny Yin
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2c1ab2407d3718ab37c14c4c5b542a7d92218752
 ## Overview
 
 This project implements a lightweight sales analytics application using DuckDB. It demonstrates how DuckDB’s internal features—such as columnar storage, vectorized execution, and push-based query processing—improve performance for analytical workloads.
@@ -30,6 +34,15 @@ The project uses:
 - DuckDB (in-process database)
 - A synthetic dataset generated within the notebook (or optional CSV input)
 
+## Install Dependencies
+
+Install required libraries using:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ## How to Run the Application
 1. Clone the repository:
 git clone https://github.com/ChaoyangYin/DSCI551-Final-Project.git
@@ -42,7 +55,20 @@ jupyter notebook
 3. Open:
 DuckDB_project.ipynb
 
-4. Run all cells from top to bottom.
+4. Run all cells from top to bottom.  
+   - When prompted, input the number of rows for the synthetic dataset (or press **Enter** to use the default).  
+   - The notebook will pause at this step during “Run All” until input is provided.
+
+   **Using your own dataset:**  
+   - Set `USE_SYNTHETIC = False` in the notebook.  
+   - Place your dataset at: `data/your_dataset.csv` (this path is required).  
+   - The dataset must include the following columns:
+     - `region`
+     - `product`
+     - `sales`
+     - `order_date`
+   - Column names must match exactly.
+   - `order_date` should be in a standard date/time format (e.g., YYYY-MM-DD).
 
 ## Reproducing Results
 
