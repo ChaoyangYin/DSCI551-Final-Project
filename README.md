@@ -1,5 +1,6 @@
 # DSCI551-Final-Project: DuckDB Sales Analytics Project
 
+## Sunny Yin
 ## Overview
 
 This project implements a lightweight sales analytics application using DuckDB. It demonstrates how DuckDB’s internal features—such as columnar storage, vectorized execution, and push-based query processing—improve performance for analytical workloads.
