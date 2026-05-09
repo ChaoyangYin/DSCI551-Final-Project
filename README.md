@@ -72,10 +72,15 @@ This project does not require any API keys or credentials.
 All functionality runs locally using DuckDB’s embedded architecture.
 
 ## Repository Structure
+
 DSCI551-Final-Project/
+
 ├── DuckDB_project.ipynb
+
 ├── data/ (optional)
+
 ├── requirements.txt (optional)
+
 └── README.md
 
 ## Summary
